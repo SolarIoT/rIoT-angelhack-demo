@@ -6,8 +6,8 @@ let SEU1 = 0;
 let SEU2 = 0;
 let EFG1 = 0;
 let EFG2 = 0;
-function viEnAcount(verification, energyGen1, EU1, EU2) {
-	console.log("verification = " + verification + ",energyGen1 =" + energyGen1 + " , EU1 =" + EU1 + " ,EU2 = " + EU2);
+function viEnAcountP(verification, energyGen1, EU1, EU2) {
+	//console.log("verification = " + verification + ",energyGen1 =" + energyGen1 + " , EU1 =" + EU1 + " ,EU2 = " + EU2);
 	if (verification){
 		//battery between full and empty
 		if ((b1+energyGen1-(EU1 + EU2) <= 100)&&(b1+energyGen1-(EU1 + EU2) >= 0)) {
@@ -40,8 +40,13 @@ function viEnAcount(verification, energyGen1, EU1, EU2) {
 			SEU2 += EU2;
 		}
 	}
-
-console.log(b1);
-console.log("HI JACK.");
+console.log();
+console.log('provider info');
+console.log();
+console.log("battery charge: " +b1+"%");
+console.log("wallet: " + W1);
+console.log("energy sent to grid: "+EtoG1);
+console.log("solar energy used: " + SEU1);
+console.log("energy from grid used: " + EFG1);
 }
-viEnAcount();
+//console.log(viEnAcountP(true, 3, 1, 1));
