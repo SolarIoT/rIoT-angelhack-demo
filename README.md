@@ -1,3 +1,3 @@
-# rIoT-interface
+# rIoT-angelhack-demo
 
 ## generates virtual energy transaction information
