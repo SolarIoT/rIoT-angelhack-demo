@@ -7,6 +7,7 @@ let SEU2 = 0;
 let EFG1 = 0;
 let EFG2 = 0;
 function viEnAcount(verification, energyGen1, EU1, EU2) {
+	console.log("verification = " + verification + ",energyGen1 =" + energyGen1 + " , EU1 =" + EU1 + " ,EU2 = " + EU2);
 	if (verification){
 		//battery between full and empty
 		if ((b1+energyGen1-(EU1 + EU2) <= 100)&&(b1+energyGen1-(EU1 + EU2) >= 0)) {
