@@ -9,7 +9,7 @@ let EFG2 = 0;
 function viEnAcount(verification, energyGen1, EU1, EU2) {
 	if (verification){
 		//battery between full and empty
-		if(b1+energyGen1-(EU1 + EU2) <= 100)&&(b1+energyGen1-(EU1 + EU2) >= 0){
+		if ((b1+energyGen1-(EU1 + EU2) <= 100)&&(b1+energyGen1-(EU1 + EU2) >= 0)) {
 			b1 += energyGen1 - (EU1 + EU2);
 			SEU1 += EU1;
 			SEU2 += EU2;
@@ -38,5 +38,5 @@ function viEnAcount(verification, energyGen1, EU1, EU2) {
 			SEU1 += EU1;
 			SEU2 += EU2;
 		}
-	} 
+	}
 }
