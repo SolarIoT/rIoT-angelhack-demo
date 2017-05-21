@@ -41,7 +41,9 @@ function viEnAcount(verification, energyGen1, EU1, EU2) {
 		}
 	}
 console.log(b1);
-console.log("HI JACK.");
+console.log(os.platform());
+console.log(os.release());
+console.log(os.arch());
 }
 
 viEnAcount();
